@@ -1,0 +1,83 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.form-control {
+    height: 51px;
+    width: 482px;
+    border: none; 
+    border-bottom: 2px solid $c0-bg-purple; 
+    outline: none; 
+}
+
+.form-control::placeholder {
+    font-size: $fz-4xl; 
+}
+
+// footer
+.footer {
+    margin-top: 50px;
+    .footer-top {
+        background-color: $c0-bg-footer;
+        height: 200px;
+        .container {
+            display: flex;
+            margin: 0 125px;
+            .get-help {
+                margin-top: 40px;
+                width: calc(100%/3);
+            }
+            .orders {
+                margin-top: 40px;
+                width: calc(100%/3);
+            }
+            .register {
+                margin-top: 40px;
+                width: calc(100%/3);
+            }
+        }
+    }
+    .footer-bottom {
+        background-color: $c1-bg-footer;
+        height: 175px;
+        .container {
+            display: flex;
+            margin: 0 125px;
+            .sign-up, .gift-cards, .stores {
+                margin-top: 50px;
+                width: calc(100%/3);
+            }
+        }
+    }
+}
+
+.title-text {
+    margin-bottom: 10px;
+    @include text($fz-xl, $fw-bold, $c0-text-dark);
+}
+.content-text {
+    display: grid;
+    margin-bottom: 5px;
+    @include text($fz-2small, $fw-regular, $c0-text-dark);
+}
+.content-link {
+    @include text($fz-2small, $fw-regular, $c0-text-red);
+}
+
+.line {
+    border-left: 2px solid $c0-bg-line; 
+    height: 100px; 
+    margin: 40px 15px; 
+}

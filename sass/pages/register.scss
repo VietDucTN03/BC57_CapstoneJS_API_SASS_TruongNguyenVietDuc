@@ -1,0 +1,157 @@
+@import "../themes/variable";
+@import "../component/component";
+@import "../base/base";
+
+//Header
+.header {
+    background-color: $c0-text-dark;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        border: 1px;
+        .logo {
+            width: 116px;
+            height: 32px;
+        }
+        .options {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            .cart {
+                width: 60px;
+                height: 30px;
+            }
+            .login {
+                width: 91px;
+                height: 32px;
+                a {
+                    color: $c0-text-light;
+                }
+            }
+            .register {
+                width: 90px;
+                height: 32px;
+                a {
+                    color: $c0-text-light;
+                    position: relative;
+                    &::after{
+                        content:'';
+                        position: absolute;
+                        height: 2px;
+                        width: 0px;
+                        background-color: $c0-bg-brown;
+                        bottom: -5px;
+                        left: 0;     
+                        transition: width 0.5s;
+                    }
+                    &:hover{
+                        color: $c0-text-brown;
+                        &::after{
+                            width: 100%;
+                            transition: width 0.5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Menu
+.menu {
+    height: 50px;
+    .container {
+        ul {
+            padding-top: 15px;
+            display: flex;
+            li {
+                list-style: none;
+                margin-right: 30px;
+                a {
+                    @include text();
+                    position: relative;
+                    &::after{
+                        content:'';
+                        position: absolute;
+                        height: 3px;
+                        width: 0px;
+                        background-color: $c0-bg-black;
+                        bottom: -5px;
+                        left: 0;     
+                        transition: width 0.5s;
+                    }
+                    &:hover{
+                        font-weight: $fw-regular;
+                        &::after{
+                            width: 100%;
+                            transition: width 0.5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//RegisterContent
+.register-content {
+    .container {
+        .register-title {
+            @include text($fz-3xl, $fw-regular, $c0-text-dark);
+            text-align: center;
+        }
+        .input-info {
+            display: flex;
+            flex-wrap: wrap;
+            .register {
+                text-align: center;
+                width: calc(100%/2);
+                margin-top: 20px;
+            }
+            .register-email {
+                
+            }
+            .register-name {
+
+            }
+            .register-password {
+
+            }
+            .register-phone {
+
+            }
+            .register-password-confirm {
+
+            }
+            .register-gender {
+                display: flex;
+                justify-content: space-around;
+                padding-left: 20px;
+                @include textRegister();
+                .input-gender {
+                    display: flex;
+                    margin: 0 50px;
+                    width: 40px;
+                    height: 30px;
+                    border-radius: 50%;
+                    background-color: $c0-text-grey;
+                    p {
+                        padding-left: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .button-register {
+        text-align: right;
+        margin-right: 300px;
+        padding-top: 50px;
+        #btn-submit {
+            width: 291px;
+            height: 50px;
+            @include button($fz-2xl, $fw-regular, $c0-text-light, $c0-bg-purple, 1px solid $c0-bg-light, $c0-bg-light, $c0-text-purple);
+        }
+    }
+}

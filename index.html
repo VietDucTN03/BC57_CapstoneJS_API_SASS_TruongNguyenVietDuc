@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <!-- GG fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@300;400;600;700&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,600;6..12,700;6..12,800;6..12,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="#">
+            <img src="./img/image 3.png" alt="Logo" />
+          </a>
+        </div>
+        <div class="options">
+          <div class="cart">
+            <a href="#">
+              <img src="./img/image 8.png" alt="Cart" />
+            </a>
+          </div>
+          <div class="login">
+            <a href="#">Login</a>
+          </div>
+          <div class="register">
+            <a href="./register.html">Register</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="menu">
+      <div class="container">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Woman</a></li>
+          <li><a href="#">Kid</a></li>
+          <li><a href="#">Sport</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="carousel">
+      <img src="/img/image 6.png" alt="bg" />
+      <div class="container">
+        <div class="product-img">
+          <img src="./img/image 4.png" alt="Giay" />
+        </div>
+        <div class="product-content">
+          <h1 class="product-name">Product name</h1>
+          <p class="product-detail">Product description ....</p>
+          <a href="./detail.html?productid=1">
+            <button id="btn-buy">Buy now</button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="product-feature">
+      <div class="container">
+        <h1 class="title">- Product Feature -</h1>
+        <div class="product-list" id="tblProducts"></div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="get-help">
+            <div class="title">
+              <h1 class="title-text">GET HELP</h1>
+            </div>
+            <div class="content">
+              <a href="#" class="content-text">Contact us</a>
+              <a href="#" class="content-text">Shopping</a>
+              <a href="#" class="content-text">NIKEID</a>
+              <a href="#" class="content-text">Nike+</a>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="orders">
+            <div class="title">
+              <h1 class="title-text">ORDERS</h1>
+            </div>
+            <div class="content">
+              <a href="#" class="content-text">Payment options</a>
+              <a href="#" class="content-text">Shipping and delivery</a>
+              <a href="#" class="content-text">Returns</a>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="register">
+            <div class="title">
+              <h1 class="title-text">REGISTER</h1>
+            </div>
+            <div class="content">
+              <p class="content-text">
+                Create one account to manage everything you do with Nike, from
+                your shopping preference to your Nike+ activity
+              </p>
+              <a href="#" class="content-link"><span>Learn more</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="sign-up">
+            <div class="title">
+              <h1 class="title-text">EMAIL SIGN UP</h1>
+            </div>
+            <div class="content">
+              <p class="content-text">
+                Be the first to know about new products and special offers
+              </p>
+              <a href="#" class="content-link"><p>Sign up now</p></a>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="gift-cards">
+            <div class="title">
+              <h1 class="title-text">GIFT CARDS</h1>
+            </div>
+            <div class="content">
+              <p class="content-text">Give the gift chat always fits</p>
+              <a href="#" class="content-link"><p>View cards</p></a>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="stores">
+            <div class="title">
+              <h1 class="title-text">STORES NEAR YOU</h1>
+            </div>
+            <div class="content">
+              <p class="content-text">
+                Locate a Nike retail store or authorized retailer.
+              </p>
+              <a href="#" class="content-link"><p>Search</p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"
+      integrity="sha512-emSwuKiMyYedRwflbZB2ghzX8Cw8fmNVgZ6yQNNXXagFzFOaQmbvQ1vmDkddHjm5AITcBIZfC7k4ShQSjgPAmQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./controllers/manageProducts_api.js"></script>
+  </body>
+</html>
